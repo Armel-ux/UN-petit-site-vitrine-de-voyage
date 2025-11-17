@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
 *{
     margin: 0;
     padding: 0;
@@ -82,6 +85,7 @@ section{
     width: 100%;
     display:flex;
     justify-content: center;
+    
 }
 .home-left{
     position :relative;
@@ -311,6 +315,7 @@ section{
     border: 2px solid #f6d238;
     border-radius: 15px;
     box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+    outline: none;
 }
 .reviews-right button{
     position: relative;
@@ -330,4 +335,178 @@ footer p{
 }
 footer h2{
     margin-top: 20px;
+}
+
+@media(max-width:950px){
+    .home-left{
+        width: 500px;
+        height: 50%;
+    }
+    .left-image-1{
+        width: 300px;
+        height: 400px;
+    }
+    .left-image-2{
+        width: 200px;
+        height: 280px;
+        left: 220px;
+    }
+    .home-right{
+        width: 40%;
+    }
+    .gallery{
+        flex-wrap:wrap;
+        padding: 0 40px;
+    }
+    .gallery .image{
+    width:45% ;
+    margin-top: 10px;
+    justify-content: space-around;
+    }
+
+    section{
+        padding: 60px 4%;
+    }
+    .cart-div{
+        flex-wrap: wrap;
+    }
+    .cart{
+        width: 45%;
+    }
+    .Reviews-section{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .reviews-left,.reviews-right{
+        width: 100%;
+        margin: 10px 0;
+    }
+    .reviews-right{
+        text-align: center;
+    }
+}
+
+@media(max-width:865px){
+    header{
+        padding: 20px 2%;
+    }
+}
+@media(max-width:730px){
+    header{
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    header ul li a{
+        margin: 10px 0;
+        display: inline-block;
+    }
+    .logo-div{
+        width: 100%;
+        text-align: center;
+    }
+    .btn-header{
+        width: 100%;
+        justify-content: center;
+    }
+    .home-section{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        gap: 450px;
+        align-items: center;
+    }
+    .home-left,.home-right{
+        width: 100%;
+        
+    }
+    .home-left{
+        left: 15%;
+    }
+
+    section{
+        padding: 70px 1%;
+    }
+}
+@media(max-width:655px){
+    .image-cart {
+        height: 60%;
+    }
+}
+@media(max-width:550px){
+    .home-left{
+        left: 9%;
+    }
+    .gallery{
+        flex-direction: column;
+        align-items: center;
+        padding-top:30px ;
+    }
+    .gallery .image{
+        width: 80%;
+    }
+    .desc-btn{
+        display: none;
+    }
+    .cart-div{
+        flex-direction: column;
+        align-items: center;
+    }
+    .cart{
+        width: 80%;
+    }
+    .image-cart{
+        height: 70%;
+    }
+}
+@media(max-width:480px){
+    .home-left{
+        left: 0%;
+    }
+    .gallery .image{
+        width: 90%;
+    }
+}
+@media(max-width:350px){
+    header{
+        padding: 20px 0%;
+    }
+    header ul {
+        gap: 0;
+    }
+    .home-left .left-image-1{
+        width: 80%;
+        height: 300px;
+
+    }
+    .home-left .left-image-2{
+        left: 140px;
+        width: 50%;
+        height: 200px;
+        top: 100px;
+    }
+    section{
+        padding: 50px 10px;
+    }
+    .gallery{
+        width: 100%;
+        padding: 0;
+    }
+    .gallery .image{
+        width: 98%;
+    }
+    .cart{
+        width: 98%;
+    }
+    .reviews-right{
+        padding: 0;
+    }
+    .reviews-right input{
+        width: 100%;
+        position: relative;
+    }
+    .reviews-right button{
+        left: 98px;
+        top: -58px;
+    }
 }
