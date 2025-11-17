@@ -270,13 +270,64 @@ section{
 .image-cart {
     width: 100%;
     height: 70%;
+    overflow: hidden;
 }
 .image-cart img{
     width: 100%;
     height: 100%;
     object-fit: cover;
     border-radius: 15px;
+    cursor: pointer;
+}
+.image-cart img:hover{
+    transition: 1s ease;
+    transform: scale(1.5) rotate(30deg);
 }
 .cart-desc button{
     margin-left: 30px;
+}
+
+.views-all{
+    padding: 40px;
+    text-align: center;
+}
+.reviews-left{
+    width: 50%;
+}
+.reviews-left p{
+    color: #797676;
+}
+
+.Reviews-section{
+    display: flex;
+    justify-content: space-between;
+}
+.reviews-right{
+    width: 50%;
+}
+.reviews-right input{
+    width: 70%;
+    padding: 16px;
+    border: 2px solid #f6d238;
+    border-radius: 15px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+}
+.reviews-right button{
+    position: relative;
+    left: -45px;
+    box-shadow: 5px 5px 30px rgba(0,0,0,0.1);
+
+}
+.reviews-right button:hover{
+    transform: rotate(0deg);
+}
+footer{
+    width: 100%;
+    text-align: center;
+}
+footer p{
+    color: #797676;
+}
+footer h2{
+    margin-top: 20px;
 }
