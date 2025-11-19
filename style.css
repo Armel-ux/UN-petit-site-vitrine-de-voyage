@@ -467,7 +467,7 @@ footer h2{
         width: 90%;
     }
 }
-@media(max-width:350px){
+@media(max-width:450px){
     header{
         padding: 20px 0%;
     }
